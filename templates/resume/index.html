@@ -1,0 +1,222 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Developer Resume</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        /* font-size: 1.125rem; */
+        /* text-anchor: middle; */
+        /* -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none; */
+        background-image: url("{% static 'image/programmers_ai_dev.png' %}");
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+          background-image: url("{% static 'image/programmers_ai_dev.png' %}");
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static 'bootstrap/css/carousel.css' %}" rel="stylesheet">
+    <link rel="short icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/ting-kim">Github</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>안녕하세요. 개발자를 꿈꾸고 있는 김태호입니다.</h1>
+            <p>기계공학을 전공하여 졸업 후 백엔드 개발에 도전하고 있습니다.</p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>주언어는 Python이고, 성장을 중시합니다.</h1>
+            <p>블로그에 TIL을 업로드하곤 합니다. 부족하지만 계속해서 노력하겠습니다 :)</p>
+            <p><a class="btn btn-lg btn-primary" href="https://ting-kim.github.io/">TIL blog</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>커피를 굉장히 좋아합니다.</h1>
+            <p>소소한 이야기 나누며 좋은 인연 만들어나가면 좋을 것 같습니다 😊</p>
+            <p><a class="btn btn-lg btn-primary" href="mailto:ting_916@naver.com">Contact</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <image class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'image/megabox.jpg' %}"/>
+        <p></p>
+        <h2>영화 예매 사이트 구현</h2>
+        <p>[팀] Java, Oracle DB, Servlet, JSP를 활용하여 영화 예매 사이트를 구현했습니다. 전반적인 업무를 분담하여 진행했으며, 극장 파트를 맡아서 수행했습니다.</p>
+        <p><a class="btn btn-secondary" href="https://github.com/Ting-Kim/megabox">View code &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <image class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'image/scatter_plot.jpg' %}"/>
+        <p></p>
+        <h2>EDA 분석 및 배포</h2>
+        <p>[개인] <a href="https://www.kaggle.com/teertha/ushealthinsurancedataset">US Health Dataset</a>을 EDA(Exploratory Data Analysis) 분석한 결과를 Django Framework를 통해 웹으로 나타냈습니다. AWS EC2, Nginx, Uwsgi를 이용하여 배포까지 수행하였습니다.</p>
+        <p><a class="btn btn-secondary" href="https://github.com/Ting-Kim/django-eda">View code &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <image class="bd-placeholder-img rounded-circle" width="140" height="140" src="{% static 'image/camo_application.png' %}"/>
+        <p></p>
+        <h2>Camo Application(진행중)</h2>
+        <p>Image segmentation 모델을 사용하여 카메라를 통해 캡쳐한 사진에서 사람을 블러 처리하는 어플리케이션입니다. Django Framework를 이용하며 모델은 Mask R-CNN과 Yolact를 비교 중에 있습니다.</p>
+        <p><a class="btn btn-secondary" href="https://github.com/Ting-Kim/kivy_camo">View code &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <hr class="featurette-divider">
+
+
+    <!-- START THE FEATURETTES -->
+    <br>
+    <h2 class="featurette-heading">Activity</h3>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">자바 기반 모바일 융합 SW 개발자 양성 과정 <span class="text-muted">(2020.03-2020.08)</span></h2>
+        <p class="lead">Java, RDBMS, Oracle DB 10g, Servlet, JSP, Spring Framework 및 HTML, CSS3, Javascript 기초 문법에 대한 교육 수강 (쌍용교육센터)</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"><image src="{% static 'image/java_oracle.png' %}"/></svg> -->
+        <image class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{% static 'image/java_oracle.jpg' %}"/>
+          
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">핀테크 프로젝트 개발 과정 <span class="text-muted">(2020.10, 2주)</span></h2>
+        <p class="lead">금융결제원 오픈뱅킹 API에 대한 사용법 교육 수강 및 오픈뱅킹 API를 활용한 토이 프로젝트 수행 (한국인터넷진흥원)</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="background-image: url({% static 'image/open_banking.png' %});" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"><image src="{% static 'image/open_banking.png' %}"></image></svg> -->
+          <image class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{% static 'image/open_banking.png' %}"/>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">[K-Digital-Training] 인공지능 데브코스
+          <span class="text-muted">(2020.12-2021.03)</span></h2>
+        <p class="lead">Linear Algebra, Linear Regression, Linear Classification, MLP(MultiLayer Perceptron), CNN(Convolution Neural Network), NLP(Natural Language Processing) 등 인공 지능 이론 및 실습 과정 수료 (프로그래머스)</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"><image class="img-thumbnail" src="{% static 'image/programmers_ai_dev.png' %}"/></svg> -->
+          <image class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="{% static 'image/programmers_ai_dev.png' %}"/>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+      
+  </body>
+</html>
