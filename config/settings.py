@@ -42,9 +42,12 @@ DJANGO_APPS = [
 
 PROJECT_APPS = [
     "resume.apps.ResumeConfig",
+    "todo.apps.TodoConfig",
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    "django_extensions",
+]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
@@ -130,3 +133,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# django-extensions
+GRAPH_MODELS = {
+    'all_applications': True,
+    'group_models': True,
+}
